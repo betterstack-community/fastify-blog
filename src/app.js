@@ -1,8 +1,9 @@
 import Fastify from "fastify";
 import env from "./config/env.js";
+import logger from "./config/logger.js";
 
 const fastify = Fastify({
-  logger: true,
+  logger: logger,
 });
 
 fastify.get("/", function handler(request, reply) {
