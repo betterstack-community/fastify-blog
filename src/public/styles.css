@@ -11,15 +11,15 @@ html {
   padding: 0;
 }
 
-a {
-  color: #333;
-}
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  color: #333;
+}
+a {
   color: #333;
 }
 
@@ -32,6 +32,11 @@ body {
 main {
   margin-top: 3rem;
 }
+
+main h1 {
+  padding-top: 2rem;
+}
+
 header {
   background: #03a9f4;
   color: #fff;
@@ -138,6 +143,14 @@ ul.posts li a:hover {
 .post-content h1 {
   font-size: 3rem;
 }
+
+.post-content p {
+  line-height: 1.7;
+  color: #817e7e;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
 form.create-post-form {
   max-width: 600px;
   margin: 20px auto;
@@ -180,4 +193,13 @@ form button {
 
 form button:hover {
   background: #77aaff;
+}
+
+.edit-post-form {
+  margin-top: 1.5rem;
+}
+
+.edit-post-form input,
+.edit-post-form textarea {
+  margin-top: 0.7rem;
 }
